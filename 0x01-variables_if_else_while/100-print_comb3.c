@@ -7,20 +7,18 @@
   */
 int main(void)
 {
-	int c;
-
-	int s;
+	int c, i;
 
 	for (c = '0'; c <= '9'; c++)
 	{
-		for (s = '0'; s <= '9'; s++)
+		for (i = '0'; i <= '9'; i++)
 		{
 			if (c < i)
 			{
 				putchar(c);
-				putchar(s);
+				putchar(i);
 
-				if (c != '8' || (c == '8' && s != '9'))
+				if (c != '8' || (c == '8' && i != '9'))
 				{
 					putchar(',');
 					putchar(' ');
@@ -33,4 +31,5 @@ int main(void)
 
 	return (0);
 }
+
 
