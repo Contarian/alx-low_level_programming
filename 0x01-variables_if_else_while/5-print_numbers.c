@@ -1,15 +1,20 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
-  * main - Prints some letters of alphabet
+  * main - Prints the numbers since 0 to 9
   *
-  * Return: Always (1)
+  * Return: Always (Success)
   */
 int main(void)
 {
-     int d = 0;
+	char n;
 
-     for (d = 0; d < 10; d++);
+	for (n = '0'; n <= '9'; n++)
+	{
+		putchar(n);
+	}
 
-     printf("%i \n", d);
-}	
+	putchar('\n');
+
+	return (0);
+}
