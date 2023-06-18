@@ -1,17 +1,23 @@
 #include <stdio.h>
 #include <stdlib.h>
+
 /**
-  * main - Prints the base 16
+  * main - Prints a hexadecimal string
   *
   * Return: Always (1)
   */
 int main(void)
 {
-	int n;
+	char c;
 
-	for (n = '0'; n <= '15'; n++)
+	for (c = '0'; c <= '9'; c++)
 	{
-		putchar(n);
+		putchar(c);
+	}
+
+	for (c = 'a'; c <= 'f'; c++)
+	{
+		putchar(c);
 	}
 
 	putchar('\n');
