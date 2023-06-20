@@ -1,10 +1,9 @@
-#include <stdio.h>
 #include "main.h"
 
 /**
- * main - check the code
+ * print_alphabet - make the alphabet
  *
- * Return: Always 0.
+ * Return:void
  */
 int print_alphabet(void)
 {       
