@@ -7,12 +7,12 @@
  *
  */
 
-int main (void)
+int main(void)
 
 {
-     _putchar("_putchar%c\n", _putchar);
+     putchar("_putchar%c\n", _putchar);
 
-     _putchar('\n');
+     putchar('\n');
 
      return 0;
 }	
