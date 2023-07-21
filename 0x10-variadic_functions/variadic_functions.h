@@ -2,12 +2,13 @@
 #define _VARIADIC_FUNCTIONS_H_
 #include <stdarg.h>
 #include <unistd.h>
+#include <stdio.h>
 
 int _putchar(char c)
 {
 	return (write(1, &c, 1));
 }
-#include <stdio.h>
+
 /*
  * struct check - paramenters to check against
  * @c: type
