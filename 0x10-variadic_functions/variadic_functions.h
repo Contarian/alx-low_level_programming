@@ -1,7 +1,9 @@
 #ifndef _VARIADIC_FUNCTIONS_H_
 #define _VARIADIC_FUNCTIONS_H_
 #include <stdarg.h>
-#include <unistd.h>int _putchar(char c)
+#include <unistd.h>
+
+int _putchar(char c)
 {
 	return (write(1, &c, 1));
 }
