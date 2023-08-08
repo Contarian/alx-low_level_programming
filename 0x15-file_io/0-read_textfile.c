@@ -12,26 +12,25 @@
  *
  * Return:the actual num of the letters that  it could read and print
  */
-
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	int jb;
+	int fd;
 	ssize_t lenr, lenw;
 	char *buffer;
 
 	if (filename == NULL)
 		return (0);
-	jb = open(filename, O_RDONLY);
-	if (jb == -1)
+	fd = open(filename, O_RDONLY);
+	if (fd == -1)
 		return (0);
 	buffer = malloc(sizeof(char) * letters);
 	if (buffer == NULL)
 	{
-		close(jb);
+		close(fd);
 		return (0);
 	}
-	lenr = read(jb, buffer, letters);
-	close(jb);
+	lenr = read(fd, buffer, letters);
+	close(fd);
 	if (lenr == -1)
 	{
 		free(buffer);
